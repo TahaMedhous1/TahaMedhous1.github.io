@@ -1,11 +1,12 @@
-/* centered title in the top */
-
-* {
+body {
     font-family: 'OWS';
 }
 
-
-/*font-face containing three weights with woff and woff2*/
+@font-face {
+    font-family: 'Qadi';
+    font-weight: 400;
+    src: url('../style/fonts/Qadi.woff2') format('woff2'), url('../style/fonts/Qadi.woff') format('woff');
+}
 
 @font-face {
     font-family: 'OWS';
@@ -26,8 +27,7 @@
 }
 
 .titleH {
-    font-family: 'OWS';
-    font-weight: Bold;
+    font-family: 'Qadi' !important;
     font-size: 10vw;
     display: flex;
     justify-content: center;
@@ -41,6 +41,13 @@ hr {
     margin-bottom: 2%;
 }
 
+.source {
+    font-weight: bold;
+    text-align: left;
+    padding: 5%;
+    color: darkblue;
+}
+
 section {
     width: 100%;
     display: flex;
@@ -50,7 +57,7 @@ section {
 }
 
 img {
-    width: 80%;
+    width: 50%;
     border-radius: 1%;
 }
 
@@ -75,7 +82,7 @@ p {
     padding: 0 15%;
     font-size: 20px;
     text-align: justify;
-    line-height: 2rem;
+    line-height: 2.2rem;
     margin-bottom: 24px;
 }
 
